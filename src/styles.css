@@ -103,14 +103,13 @@ header nav {
     gap: 40px;
     background: none;
     border-bottom: 1px solid rgb(248, 208, 122);
-    position: fixed;
 }
 
 header nav button {
     width: 100px;
     height: 50px;
 
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     background: none;
     border: none;
     color: rgb(241, 221, 176);
@@ -127,13 +126,83 @@ header nav button:hover {
 .home-tab {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: 100vh;
+    margin-top: 100px;
+
 }
 
 .logo {
     width: 250px;
     height: 250px;
+    margin-bottom: 70px;
+}
+
+.menu-tab {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.menu-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 600px;
+    gap: 15px;
+    padding: 20px;
+    background-color: rgb(161, 89, 48, 0.5);
+    border-radius: 15%;
+    border: 1px solid orange;
+
+    backdrop-filter: blur(10px);
+    /* Blurs the area behind the element */
+}
+
+
+
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+
+}
+
+.card-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+
+
+.card-title,
+.card-text {
+    color: #f1ddb0;
+
+}
+
+.card-title {
+    font-size: 1.2rem;
+    width: 100%;
+    border-bottom: 2px solid orange;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 1.3rem;
+    text-align: center;
+
 }

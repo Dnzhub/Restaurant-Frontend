@@ -1,11 +1,9 @@
-const content = document.querySelector("#content");
 import logoImage from "./images/logo.png";
 
-export default function createHomePage() {
-    // const image = document.createElement("img");
-    // image.src = pepegaImage;
+const content = document.querySelector("#content");
 
-    // document.body.appendChild(image);
+export default function createHomePage() {
+
 
     content.classList.add("home-tab");
     const logo = document.createElement("img");

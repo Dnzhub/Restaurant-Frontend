@@ -1,13 +1,33 @@
 import "./styles.css";
-import { greeting } from "./greeting.js";
 import createHomePage from "./home.js";
-// import pepegaImage from "./images/pepega.jpeg"
+import createMenuPage from "./menu.js";
 
-// console.log(greeting);
-// const image = document.createElement("img");
-// image.src = pepegaImage;
+const buttonHome = document.querySelector("#btn-home");
+const buttonMenu = document.querySelector("#btn-menu");
+const buttonContact = document.querySelector("#btn-contact");
 
-// document.body.appendChild(image);
+const content = document.querySelector("#content");
+function clearContent() {
+    content.className = ''; // Force-set (or '' if you don't want to keep it)
 
+    while (content.firstChild) {
+        content.removeChild(content.firstChild);
+    }
+}
 
+buttonHome.addEventListener("click", () => {
+    clearContent();
+    createHomePage();
+
+});
+
+buttonMenu.addEventListener("click", () => {
+    clearContent();
+    createMenuPage();
+})
+
+clearContent();
 createHomePage();
+
+
+
