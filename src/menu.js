@@ -4,7 +4,7 @@ import frumentyImage from "./images/frumenty.JPG";
 import saltfishImage from "./images/Saltfish.jpeg"
 
 const recipes = [
-    { title: "Peasant Stew", image: peasantStewImage, ingredients: "Barley-oats, cabbage, leek, onion , carrot , peas, Salt, pepper and herbs" },
+    { title: "Peasant Stew", image: peasantStewImage, ingredients: "Barley-oats, cabbage, leek, onion, carrot, peas, salt, pepper and herbs" },
     { title: "Honeyed Chicken", image: honeyedChickenImage, ingredients: "Chicken, honey, ground ginger, cinnamon, cloves, vinegar, salt" },
     { title: "Frumenty", image: frumentyImage, ingredients: "Wheat, almond milk, egg, saffron, honey, dried fruits" },
     { title: "Saltfish", image: saltfishImage, ingredients: "Salted cod, mustard, honey, garlic" }

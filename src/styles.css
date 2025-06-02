@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Medieval-Font';
+    src: url('./fonts/MedievalFont.woff2') format('woff2'),
+        url('./fonts/MedievalFont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *,
 *::before,
@@ -77,6 +86,7 @@ h6 {
 
 :root {
     font-size: 16px;
+    font-family: 'Medieval-Font ,Courier New', Courier, monospace;
 }
 
 body {
@@ -133,6 +143,30 @@ header nav button:hover {
     margin-top: 100px;
 
 }
+
+.home-text-long {
+    font-size: 1.5rem;
+}
+
+.home-text-short {
+    font-size: 1.3rem;
+}
+
+.home-text-container {
+    width: 60%;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 208, 165);
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(161, 89, 48, 0.5);
+    border: 2px solid orange;
+    border-radius: 5px;
+    backdrop-filter: blur(10px);
+}
+
 
 .logo {
     width: 250px;
@@ -206,7 +240,7 @@ header nav button:hover {
 }
 
 .card-text {
-    font-size: 1.3rem;
+    font-size: 1rem;
     text-align: center;
 
 }

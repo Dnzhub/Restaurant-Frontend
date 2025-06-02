@@ -15,18 +15,20 @@ export default function createHomePage() {
     title.style.fontSize = "3rem";
     title.style.color = "#f1ddb0"
 
+    const textContainer = document.createElement("div");
+    textContainer.classList.add("home-text-container");
     const text1 = document.createElement("p");
-    text1.textContent = "Warm hearths, frothy mugs, and whispered tales where every night sings with merriment and mystery";
-    text1.style.fontSize = "1.9rem";
-    text1.style.color = "#f1ddb0"
+    text1.textContent = "Warm hearths, frothy mugs, and whispered tales where every night sings with merriment and mystery...";
+    text1.classList.add("home-text-long");
 
     const text2 = document.createElement("p");
     text2.textContent = "Enter, rest thy boots, and let the mead flow!"
-    text2.style.fontSize = "1.6rem"
-    text2.style.color = "#f1ddb0"
+    text2.classList.add("home-text-short");
 
     content.appendChild(title);
     content.appendChild(logo);
-    content.appendChild(text1);
-    content.appendChild(text2);
+    textContainer.appendChild(text1);
+    textContainer.appendChild(text2);
+    content.appendChild(textContainer);
+
 }
