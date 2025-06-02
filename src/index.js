@@ -1,7 +1,7 @@
 import "./styles.css";
 import createHomePage from "./home.js";
 import createMenuPage from "./menu.js";
-
+import createContactPage from "./contact.js";
 const buttonHome = document.querySelector("#btn-home");
 const buttonMenu = document.querySelector("#btn-menu");
 const buttonContact = document.querySelector("#btn-contact");
@@ -24,6 +24,11 @@ buttonHome.addEventListener("click", () => {
 buttonMenu.addEventListener("click", () => {
     clearContent();
     createMenuPage();
+})
+
+buttonContact.addEventListener("click", () => {
+    clearContent();
+    createContactPage();
 })
 
 clearContent();

@@ -3,6 +3,13 @@ import honeyedChickenImage from "./images/Honeyed_Chicken.png";
 import frumentyImage from "./images/frumenty.JPG";
 import saltfishImage from "./images/Saltfish.jpeg"
 
+const recipes = [
+    { title: "Peasant Stew", image: peasantStewImage, ingredients: "Barley-oats, cabbage, leek, onion , carrot , peas, Salt, pepper and herbs" },
+    { title: "Honeyed Chicken", image: honeyedChickenImage, ingredients: "Chicken, honey, ground ginger, cinnamon, cloves, vinegar, salt" },
+    { title: "Frumenty", image: frumentyImage, ingredients: "Wheat, almond milk, egg, saffron, honey, dried fruits" },
+    { title: "Saltfish", image: saltfishImage, ingredients: "Salted cod, mustard, honey, garlic" }
+]
+
 const content = document.querySelector("#content");
 
 function createMenuCard(image, title, ingredients) {
@@ -33,24 +40,11 @@ export default function createMenu() {
     const menuContainer = document.createElement("div");
     menuContainer.classList.add("menu-container");
 
-    const peasantStewIngredients = "Barley-oats, cabbage, leek, onion , carrot , peas, Salt, pepper and herbs";
-    const peasantStew = createMenuCard(peasantStewImage, "Peasant Stew", peasantStewIngredients);
 
-    const honeyedChickenIngredients = "Chicken, honey, ground ginger, cinnamon, cloves, vinegar, salt";
-    const honeyedChicken = createMenuCard(honeyedChickenImage, "Honeyed Chicken", honeyedChickenIngredients);
-
-    const frumentyIngredients = "Wheat, almond milk, egg, saffron, honey, dried fruits";
-    const frumenty = createMenuCard(frumentyImage, "Frumenty", frumentyIngredients);
-
-    const saltfishIngredients = "Salted cod, mustard, honey, garlic";
-    const saltfish = createMenuCard(saltfishImage, "Saltfish with Mustard Sauce,", saltfishIngredients);
-
-    menuContainer.appendChild(peasantStew);
-    menuContainer.appendChild(honeyedChicken);
-    menuContainer.appendChild(frumenty);
-    menuContainer.appendChild(saltfish);
-
-
+    recipes.forEach((recipe) => {
+        const newRecipe = createMenuCard(recipe.image, recipe.title, recipe.ingredients);
+        menuContainer.appendChild(newRecipe);
+    })
 
     content.appendChild(menuContainer);
 
