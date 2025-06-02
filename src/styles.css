@@ -241,6 +241,12 @@ header nav button:hover {
     height: 100px;
 }
 
+.contact-container h2 {
+    font-size: 2rem;
+    color: #f1ddb0;
+    text-align: center;
+}
+
 .contact-info i {
     width: 30px;
     height: 30px;

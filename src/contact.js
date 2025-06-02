@@ -13,12 +13,15 @@ export default function createContactPage() {
     contactContainer.classList.add("contact-container");
 
     content.appendChild(contactContainer);
+    const title = document.createElement("h2");
+    title.textContent = "Contact";
+    contactContainer.appendChild(title);
+
 
     contactInfo.forEach((info) => {
         const newInfo = document.createElement("div");
         newInfo.classList.add("contact-info");
 
-        const testDiv = document.createElement("div");
 
         const icon = document.createElement("i");
         icon.className = `${info.iconClass}`;
@@ -27,8 +30,8 @@ export default function createContactPage() {
         text.textContent = `${info.text}`;
         text.style.color = info.color
 
-        testDiv.appendChild(icon);
-        newInfo.appendChild(testDiv);
+
+        newInfo.appendChild(icon);
         newInfo.appendChild(text);
         contactContainer.appendChild(newInfo);
     })
