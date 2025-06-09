@@ -3,7 +3,7 @@ const content = document.querySelector("#content");
 const contactInfo = [
     { iconClass: "fas fa-envelope", text: "Goldshire@tavern.com", color: "#c5c365" },
     { iconClass: "fas fa-solid fa-signs-post", text: "+9112234242", color: "#d9a200" },
-    { iconClass: "fas fa-location-dot", text: "Bywater Lane, Near the Ivy-Clad Bridge, The Eastfarthing, The Shire, Middle-earth", color: "#38cf38" },
+    { iconClass: "fas fa-location-dot", text: "By water Lane, Near the Ivy-Clad Bridge, The Eastfarthing, The Shire, Middle-earth", color: "#38cf38" },
     { iconClass: "fas fa-triangle-exclamation", text: "Delivery Instructions (for ravens or post-hobbits): Leave by the round green door—beware the sleeping foxhound!", color: "#ff4a00" }
 ]
 
